@@ -22,8 +22,10 @@ export default function Pricing() {
             <h3 className="text-xl font-bold mb-2">{plan.title}</h3>
             <p className="text-3xl font-bold text-green-400 mb-4">{plan.price}</p>
             <p className="text-sm text-gray-400">{plan.desc}</p>
+      <div className="mt-20 p-10 bg-[#112240] rounded-3xl text-center border border-green-500/30"> <h2 className="text-3xl font-bold mb-4">Confused about which plan to pick?</h2> <p className="text-gray-400 mb-8">Mujhse direct rabta karein, main aapko aapke budget ke mutabiq best offer dunga.</p> <a href="https://wa.me/923413813819?text=I%20need%20a%20custom%20quote" className="inline-block bg-green-500 text-black px-10 py-4 rounded-full font-bold hover:bg-green-600 transition-all"> Get a Custom Quote </a> </div>
           </div>
         ))}
+      <div className="mt-20 p-10 bg-[#112240] rounded-3xl text-center border border-green-500/30"> <h2 className="text-3xl font-bold mb-4">Confused about which plan to pick?</h2> <p className="text-gray-400 mb-8">Mujhse direct rabta karein, main aapko aapke budget ke mutabiq best offer dunga.</p> <a href="https://wa.me/923413813819?text=I%20need%20a%20custom%20quote" className="inline-block bg-green-500 text-black px-10 py-4 rounded-full font-bold hover:bg-green-600 transition-all"> Get a Custom Quote </a> </div>
       </div>
 
       <h2 className="text-2xl font-semibold mb-6 text-purple-400 border-b border-gray-700 pb-2">Data Entry & Virtual Assistant</h2>
@@ -33,9 +35,12 @@ export default function Pricing() {
             <h3 className="text-xl font-bold mb-2">{plan.title}</h3>
             <p className="text-3xl font-bold text-green-400 mb-4">{plan.price}</p>
             <p className="text-sm text-gray-400">{plan.desc}</p>
+      <div className="mt-20 p-10 bg-[#112240] rounded-3xl text-center border border-green-500/30"> <h2 className="text-3xl font-bold mb-4">Confused about which plan to pick?</h2> <p className="text-gray-400 mb-8">Mujhse direct rabta karein, main aapko aapke budget ke mutabiq best offer dunga.</p> <a href="https://wa.me/923413813819?text=I%20need%20a%20custom%20quote" className="inline-block bg-green-500 text-black px-10 py-4 rounded-full font-bold hover:bg-green-600 transition-all"> Get a Custom Quote </a> </div>
           </div>
         ))}
+      <div className="mt-20 p-10 bg-[#112240] rounded-3xl text-center border border-green-500/30"> <h2 className="text-3xl font-bold mb-4">Confused about which plan to pick?</h2> <p className="text-gray-400 mb-8">Mujhse direct rabta karein, main aapko aapke budget ke mutabiq best offer dunga.</p> <a href="https://wa.me/923413813819?text=I%20need%20a%20custom%20quote" className="inline-block bg-green-500 text-black px-10 py-4 rounded-full font-bold hover:bg-green-600 transition-all"> Get a Custom Quote </a> </div>
       </div>
+      <div className="mt-20 p-10 bg-[#112240] rounded-3xl text-center border border-green-500/30"> <h2 className="text-3xl font-bold mb-4">Confused about which plan to pick?</h2> <p className="text-gray-400 mb-8">Mujhse direct rabta karein, main aapko aapke budget ke mutabiq best offer dunga.</p> <a href="https://wa.me/923413813819?text=I%20need%20a%20custom%20quote" className="inline-block bg-green-500 text-black px-10 py-4 rounded-full font-bold hover:bg-green-600 transition-all"> Get a Custom Quote </a> </div>
     </div>
   );
 }
