@@ -16,6 +16,7 @@ export default function Home() {
           </Link>
         ))}
       </nav>
+      <section className="py-12 bg-[#112240] mt-10"> <div className="max-w-4xl mx-auto px-4"> <h2 className="text-2xl font-bold text-green-400 mb-6 text-center">My Core Expertise</h2> <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"> <div className="p-4 border border-gray-700 rounded-xl">🚀 Data Entry</div> <div className="p-4 border border-gray-700 rounded-xl">⌨️ Fast Typing</div> <div className="p-4 border border-gray-700 rounded-xl">📄 PDF Conversion</div> <div className="p-4 border border-gray-700 rounded-xl">🤖 AI Solutions</div> </div> </div> </section>
       
       <div className="flex flex-col items-center justify-center pt-20 px-4 text-center">
         <h1 className="text-5xl font-bold mb-4">GlobalSkill.pk</h1>
