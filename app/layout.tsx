@@ -1,33 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GlobalSkill.pk - Best AI Skill Learning Platform Pakistan",
-  description: "Learn Coding, Design, Digital Marketing with AI. Rs. 499/month",
+  title: "GlobalSkill.pk | Expert Data Entry & Web Development",
+  description: "Professional freelance services by Ali Haider. High-quality Data Entry, Virtual Assistant, and Next.js Web Development at affordable rates.",
+  keywords: "Data Entry, Freelance Pakistan, Virtual Assistant, Nextjs Developer, GlobalSkill",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
