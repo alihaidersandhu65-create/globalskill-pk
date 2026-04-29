@@ -26,6 +26,7 @@ export default function Home() {
           Start Training - Rs. 499
         </Link>
       </div>
+      <footer className="bg-[#050d1a] py-12 border-t border-gray-800 text-center"> <div className="max-w-4xl mx-auto px-4"> <h3 className="text-xl font-bold text-green-400 mb-4">GlobalSkill.pk</h3> <p className="text-gray-400 mb-6">Expert Freelance Solutions | Data Entry | Crypto Analysis</p> <div className="flex justify-center gap-6 mb-8"> <a href="/training" className="text-gray-300 hover:text-white">Training</a> <a href="/pricing" className="text-gray-300 hover:text-white">Pricing</a> <a href="https://wa.me/923413813819" className="text-gray-300 hover:text-white">Contact</a> </div> <p className="text-sm text-gray-600">© 2026 GlobalSkill.pk - All Rights Reserved.</p> </div> </footer>
     </main>
   );
 }
