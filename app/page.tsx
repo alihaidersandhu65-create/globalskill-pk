@@ -68,7 +68,7 @@ export default function Home() {
         <a href="https://www.fiverr.com/" className="bg-[#1dbf73] text-black px-12 py-4 rounded-full font-bold w-64 text-center shadow-lg">
           Fiverr Profile
         </a>
-        <button className="bg-blue-600 text-white px-12 py-4 rounded-full font-bold w-64 text-center shadow-lg">
+        <a href="/portfolio.pdf" target="_blank" className="bg-blue-600 text-white px-12 py-4 rounded-full font-bold w-64 text-center shadow-lg">
           View Projects
         </button>
       </div>
