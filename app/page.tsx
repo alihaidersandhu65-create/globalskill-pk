@@ -48,3 +48,9 @@ export default function Home() {
   );
 }
 <a href="/specialist-work.pdf" target="_blank" className="text-green-400 underline mt-2 block text-center">View Full Project (PDF)</a>
+
+export const PortfolioButton = () => (
+  <div style={{textAlign: "center", margin: "20px"}}>
+    <a href="/specialist-work.pdf" target="_blank" style={{background: "green", color: "white", padding: "10px 20px", borderRadius: "5px", textDecoration: "none"}}>View Full Project (PDF)</a>
+  </div>
+);
