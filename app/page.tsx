@@ -1,40 +1,73 @@
-import Head from 'next/head';
+import React from 'react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white font-sans">
-      <nav className="p-6 flex justify-between items-center border-b border-gray-800">
-        <h1 className="text-2xl font-bold text-blue-400">GlobalSkill.pk</h1>
+    <div className="min-h-screen bg-[#0a192f] text-white font-sans p-4 md:p-10">
+      {/* Header */}
+      <nav className="flex justify-center space-x-6 mb-12 text-sm text-gray-400">
+        <span>Home</span> <span>Training</span> <span>Pricing</span>
       </nav>
 
-      <main className="max-w-6xl mx-auto p-10 text-center">
-        <h2 className="text-5xl font-extrabold mb-6">
-          Master AI Skills for <span className="text-blue-500">Rs. 499/month</span>
-        </h2>
-        <p className="text-gray-400 text-xl mb-12">Join 1000+ students already learning and earning!</p>
+      {/* Core Expertise */}
+      <section className="text-center mb-16">
+        <h2 className="text-green-500 font-bold mb-8">My Core Expertise</h2>
+        <div className="flex flex-wrap justify-center gap-4">
+          {['Data Entry', 'Fast Typing', 'PDF Conversion', 'AI Solutions'].map((skill) => (
+            <span key={skill} className="bg-[#112240] px-4 py-2 rounded border border-gray-700 text-xs">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
 
-        <div className="grid md:grid-cols-3 gap-8 text-left">
-          <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">Web Solutions</h3>
-            <p className="text-gray-400">Next.js aur React mein professional apps banana sikhain.</p>
+      {/* MS Word Specialist Section */}
+      <div className="max-w-4xl mx-auto bg-[#112240] p-6 rounded-xl border-l-4 border-blue-500 mb-16">
+        <h3 className="font-bold mb-2 flex items-center">
+          <span className="mr-2">📘</span> MS Word Specialist
+        </h3>
+        <p className="text-gray-400 text-sm mb-4">Detailed MS Word guide including history, features, and formatting tips.</p>
+        <a href="#" className="text-green-400 text-xs underline">View Full Project (PDF)</a>
+      </div>
+
+      {/* Recent Portfolio */}
+      <section className="text-center mb-16">
+        <h2 className="text-green-500 font-bold mb-8 text-xl">My Recent Portfolio</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+            <h4 className="font-bold mb-2">📊 Data Management</h4>
+            <p className="text-gray-400 text-xs">Complex Excel formatting and data cleaning projects.</p>
           </div>
-          <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">Digital Marketing</h3>
-            <p className="text-gray-400">AI tools se business scale karna sikhain.</p>
+          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+            <h4 className="font-bold mb-2">🌐 Web Solutions</h4>
+            <p className="text-gray-400 text-xs">Modern & Responsive Next.js business websites.</p>
           </div>
-          <div className="bg-gray-800 p-8 rounded-2xl border border-gray-700">
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">Data Management</h3>
-            <p className="text-gray-400">Professional data entry aur analysis skills.</p>
+          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+            <h4 className="font-bold mb-2">📄 File Conversion</h4>
+            <p className="text-gray-400 text-xs">High-accuracy PDF to Word/Excel conversions.</p>
           </div>
         </div>
-      </main>
+      </section>
 
-      {/* WhatsApp Button with your number 03008609486 */}
+      {/* Stats Section */}
+      <div className="flex justify-around mb-16 text-center border-y border-gray-800 py-10">
+        <div><h5 className="text-green-500 font-bold text-xl">100+</h5><p className="text-xs text-gray-400">Projects Done</p></div>
+        <div><h5 className="text-blue-500 font-bold text-xl">99%</h5><p className="text-xs text-gray-400">Accuracy</p></div>
+        <div><h5 className="text-purple-500 font-bold text-xl">24/7</h5><p className="text-xs text-gray-400">Support</p></div>
+        <div><h5 className="text-yellow-500 font-bold text-xl">5.0</h5><p className="text-xs text-gray-400">Fiverr Rating</p></div>
+      </div>
+
+      {/* Fiverr & Project Buttons */}
+      <div className="flex flex-col md:flex-row gap-4 justify-center mb-16">
+        <a href="https://www.fiverr.com/" className="bg-green-600 px-10 py-3 rounded-full font-bold text-center">Fiverr Profile</a>
+        <button className="bg-blue-600 px-10 py-3 rounded-full font-bold text-center">View Projects</button>
+      </div>
+
+      {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/923008609486?text=I%20want%20to%20join%20GlobalSkill" 
-        className="fixed bottom-10 right-10 bg-green-500 p-4 rounded-full shadow-2xl flex items-center gap-2 hover:scale-110 transition"
+        href="https://wa.me/923008609486" 
+        className="fixed bottom-6 right-6 bg-blue-600 px-6 py-3 rounded-full font-bold shadow-2xl flex items-center"
       >
-        <span className="font-bold text-white px-2">Chat with us</span>
+        Order Now
       </a>
     </div>
   );
