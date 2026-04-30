@@ -2,70 +2,100 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a192f] text-white font-sans p-4 md:p-10">
-      {/* Header */}
-      <nav className="flex justify-center space-x-6 mb-12 text-sm text-gray-400">
+    <div className="min-h-screen bg-[#0a192f] text-white font-sans">
+      {/* Top Header */}
+      <nav className="flex justify-center space-x-8 p-6 text-sm text-gray-400">
         <span>Home</span> <span>Training</span> <span>Pricing</span>
       </nav>
 
-      {/* Core Expertise */}
-      <section className="text-center mb-16">
-        <h2 className="text-green-500 font-bold mb-8">My Core Expertise</h2>
-        <div className="flex flex-wrap justify-center gap-4">
+      {/* Hero Section */}
+      <section className="text-center py-16 px-4">
+        <h1 className="text-5xl font-extrabold mb-4">GlobalSkill.pk</h1>
+        <p className="text-xl text-gray-300 mb-8">Best AI Skill Learning Platform in Pakistan</p>
+        
+        <div className="flex justify-center mb-12">
+          <button className="bg-[#1dbf73] text-black font-bold px-8 py-3 rounded-md hover:bg-green-400 transition">
+            Start Training - Rs. 499
+          </button>
+        </div>
+
+        {/* Crypto Market Info from your video */}
+        <div className="flex justify-center gap-12 text-sm">
+          <div className="text-left">
+            <p className="text-gray-500 uppercase">Ethereum (ETH)</p>
+            <p className="text-blue-400 font-bold">Trading Live</p>
+          </div>
+          <div className="text-left">
+            <p className="text-gray-500 uppercase">Solana (SOL)</p>
+            <p className="text-purple-400 font-bold">Market Active</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section className="max-w-5xl mx-auto px-6 mb-20">
+        <h2 className="text-green-500 font-bold text-center mb-8">My Core Expertise</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {['Data Entry', 'Fast Typing', 'PDF Conversion', 'AI Solutions'].map((skill) => (
-            <span key={skill} className="bg-[#112240] px-4 py-2 rounded border border-gray-700 text-xs">
+            <div key={skill} className="bg-[#112240] p-4 rounded border border-gray-800 text-center text-xs">
               {skill}
-            </span>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* MS Word Specialist Section */}
-      <div className="max-w-4xl mx-auto bg-[#112240] p-6 rounded-xl border-l-4 border-blue-500 mb-16">
-        <h3 className="font-bold mb-2 flex items-center">
-          <span className="mr-2">📘</span> MS Word Specialist
-        </h3>
-        <p className="text-gray-400 text-sm mb-4">Detailed MS Word guide including history, features, and formatting tips.</p>
-        <a href="#" className="text-green-400 text-xs underline">View Full Project (PDF)</a>
-      </div>
-
-      {/* Recent Portfolio */}
-      <section className="text-center mb-16">
-        <h2 className="text-green-500 font-bold mb-8 text-xl">My Recent Portfolio</h2>
+      {/* Portfolio Grid */}
+      <section className="max-w-6xl mx-auto px-6 mb-20 text-center">
+        <h2 className="text-green-500 font-bold mb-10 text-xl">My Recent Portfolio</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+          <div className="bg-[#112240] p-8 rounded-xl border border-gray-800 text-left">
             <h4 className="font-bold mb-2">📊 Data Management</h4>
-            <p className="text-gray-400 text-xs">Complex Excel formatting and data cleaning projects.</p>
+            <p className="text-gray-400 text-xs leading-relaxed">Complex Excel formatting and data cleaning projects.</p>
           </div>
-          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+          <div className="bg-[#112240] p-8 rounded-xl border border-gray-800 text-left">
             <h4 className="font-bold mb-2">🌐 Web Solutions</h4>
-            <p className="text-gray-400 text-xs">Modern & Responsive Next.js business websites.</p>
+            <p className="text-gray-400 text-xs leading-relaxed">Modern & Responsive Next.js business websites.</p>
           </div>
-          <div className="bg-[#112240] p-6 rounded-xl text-left border border-gray-800 shadow-lg">
+          <div className="bg-[#112240] p-8 rounded-xl border border-gray-800 text-left">
             <h4 className="font-bold mb-2">📄 File Conversion</h4>
-            <p className="text-gray-400 text-xs">High-accuracy PDF to Word/Excel conversions.</p>
+            <p className="text-gray-400 text-xs leading-relaxed">High-accuracy PDF to Word/Excel conversions.</p>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <div className="flex justify-around mb-16 text-center border-y border-gray-800 py-10">
-        <div><h5 className="text-green-500 font-bold text-xl">100+</h5><p className="text-xs text-gray-400">Projects Done</p></div>
-        <div><h5 className="text-blue-500 font-bold text-xl">99%</h5><p className="text-xs text-gray-400">Accuracy</p></div>
-        <div><h5 className="text-purple-500 font-bold text-xl">24/7</h5><p className="text-xs text-gray-400">Support</p></div>
-        <div><h5 className="text-yellow-500 font-bold text-xl">5.0</h5><p className="text-xs text-gray-400">Fiverr Rating</p></div>
+      {/* Action Buttons */}
+      <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-32">
+        <a href="https://www.fiverr.com/" className="bg-[#1dbf73] text-black px-12 py-4 rounded-full font-bold w-64 text-center shadow-lg">
+          Fiverr Profile
+        </a>
+        <button className="bg-blue-600 text-white px-12 py-4 rounded-full font-bold w-64 text-center shadow-lg">
+          View Projects
+        </button>
       </div>
 
-      {/* Fiverr & Project Buttons */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center mb-16">
-        <a href="https://www.fiverr.com/" className="bg-green-600 px-10 py-3 rounded-full font-bold text-center">Fiverr Profile</a>
-        <button className="bg-blue-600 px-10 py-3 rounded-full font-bold text-center">View Projects</button>
-      </div>
+      {/* Results Section */}
+      <section className="max-w-6xl mx-auto px-6 pb-32">
+        <h2 className="text-white font-bold mb-10 text-2xl">How I Deliver Results</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="border border-green-500 p-6 rounded-xl bg-[#112240]">
+            <h4 className="font-bold mb-2 text-green-500">1. Analyze</h4>
+            <p className="text-gray-400 text-xs">Requirements ko achi tarah samajhna taake mistake na ho.</p>
+          </div>
+          <div className="border border-blue-500 p-6 rounded-xl bg-[#112240]">
+            <h4 className="font-bold mb-2 text-blue-500">2. Execute</h4>
+            <p className="text-gray-400 text-xs">100% accuracy aur fast speed ke sath kaam mukammal karna.</p>
+          </div>
+          <div className="border border-purple-500 p-6 rounded-xl bg-[#112240]">
+            <h4 className="font-bold mb-2 text-purple-500">3. Deliver</h4>
+            <p className="text-gray-400 text-xs">On-time delivery aur revision support taake aap satisfy hon.</p>
+          </div>
+        </div>
+      </section>
 
-      {/* Floating WhatsApp Button */}
+      {/* WhatsApp Button */}
       <a 
         href="https://wa.me/923008609486" 
-        className="fixed bottom-6 right-6 bg-blue-600 px-6 py-3 rounded-full font-bold shadow-2xl flex items-center"
+        className="fixed bottom-8 right-8 bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-2xl z-50 hover:bg-blue-500"
       >
         Order Now
       </a>
